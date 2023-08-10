@@ -14,15 +14,10 @@ html {
 body {
   font-family: 'Press Start 2P', sans-serif;
   color: #222;
-  background-image: linear-gradient(
-    to right bottom,
-    #e1ca9e,
-    #e1ca9e 33%,
-    #c9b18b 33%,
-    #c9b18b 66%,
-    #b69a7a 66%,
-    #b69a7a 100%
-  );
+  background-color: #e1ca9e;
+}
+body.win {
+  background-color: #43e97b;
 }
 
 /* LAYOUT */

@@ -27,7 +27,7 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.number').textContent = secretNumber;
     //store the high score
     document.querySelector('.highscore').textContent = score;
-
+    document.querySelector('body').classList.add('win');
     //Reset the game after 3 seconds
     setTimeout(ResetGame, 3000);
   }
@@ -60,7 +60,7 @@ document.querySelector('.check').addEventListener('click', function () {
   checkCount = checkCount + 1;
 
   // 10. When the check button is clicked 10 times end the game then reset the game after 3 seconds
-  if (checkCount === 10) {
+  if (checkCount === 20) {
     document.querySelector('.message').textContent = '😢 You Lost The Game!';
     document.querySelector('.score').textContent = 0;
     setTimeout(ResetGame, 3000);
@@ -73,6 +73,7 @@ const ResetGame = function () {
   document.querySelector('.number').textContent = '?';
   document.querySelector('.score').textContent = 20;
   document.querySelector('.message').textContent = 'Start guessing...';
+  document.querySelector('body').classList.remove('win');
 };
 
 // 11. When the again button is clicked reset the game
