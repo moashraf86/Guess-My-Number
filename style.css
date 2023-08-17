@@ -128,3 +128,35 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+
+@media screen and (max-width: 540px) {
+  .btn.again {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  .between {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    flex-wrap: wrap-reverse;
+  }
+
+  .right {
+    width: auto;
+    padding-top: 5rem;
+  }
+
+  .guess {
+    padding: 1.5rem;
+  }
+
+  .btn.check {
+    width: 25rem;
+  }
+}
